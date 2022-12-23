@@ -1,3 +1,3 @@
 Images for Nkumpit Trading Website
 -------
-copyrights reserved (C) 2022
+Copyrights reserved (C) 2022
