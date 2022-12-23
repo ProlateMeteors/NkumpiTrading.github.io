@@ -1,3 +1,3 @@
-Images for Nkumpit Trading website
+Images for Nkumpit Trading Website
 -------
 copyrights reserved (C)
