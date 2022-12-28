@@ -1,3 +1,6 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -263,16 +266,38 @@ header {
 
 /* Services */
 
-.services{
-  background: #f1f1f1;
-  text-align: center;
-}
-
 /*===========================
  adding style to about items 
 ============================*/
 
-.services h1{
+.services h1 {
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+}
+
+.include {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap: 20px;
+}
+
+.service {
+  padding: 40px 15px;
+  border-radius: 5px;
+  text-align: center;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 60px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.service h1 {
   display: inline-block;
   text-transform: uppercase;
   border-bottom: 4px solid #3498db;
@@ -280,52 +305,125 @@ header {
   padding-bottom: 10px;
   margin-top: 40px;
 }
-.cen{
-  max-width: 1200px;
-  margin: auto;
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover {
+  background: #3498db;
+  color: white;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: white;
+}
+
+/* Testimonial Section */
+
+
+.testimonial {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px 0;
   overflow: hidden;
-  padding: 20px;
+  background-color: #252527;
 }
-.service{
-  display: inline-block;
-  width: calc(100% / 3);
-  margin: 0 -2px;
-  padding: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.4s;
+
+.testimonial h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+  color: white;
 }
-.service:hover{
-  background: #ddd;
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.service i{
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 3px;
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
   color: #3498db;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.service h2{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-.service p{
-  color: gray;
-  font-size: 15px;
-  font-weight: 500;
-}
-@media screen and (max-width: 800px) {
-  .service{
-    width: 50%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .service{
-    width: 100%;
-  }
 }
 
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
 
 /* ABOUT US */
 
@@ -333,15 +431,89 @@ header {
   margin: 30px;
   padding: 5px;
 }
+
 .about h1 {
   text-align: center;
   color: black;
   font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
 }
+
 .about p {
   text-align: center;
   padding: 3px;
   color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #24252a;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #24252a;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #3498db;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#105e92, #3498db);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
 }
 
 /*===========================
@@ -488,11 +660,15 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
   margin: 30px;
   padding: 5px;
 }
+
 .contact h1 {
   text-align: center;
   color: black;
   font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
 }
+
 .contact p {
   text-align: center;
   padding: 3px;
@@ -639,12 +815,21 @@ a.contact_btn:hover {
   color: #24252a;
 }
 
-.contact_info  h3 {
+.contact_info h3 {
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 30px;
   color: #24252a;
 }
+
+.contact_info h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px 0 0;
+  color: #24252a;
+  text-align: left;
+}
+
 
 .contact_info p {
   line-height: 28px;
@@ -840,9 +1025,27 @@ a.contact_btn:hover {
   }
 }
 
-
 @media (min-width: 82em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 7em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 1em 1em;
   }
 }
