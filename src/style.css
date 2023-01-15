@@ -7,13 +7,14 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: #24252a;
   border-radius: 0px;
   max-width: 100%;
   max-height: 100%;
   height: 100%;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 header {
@@ -152,6 +153,69 @@ header {
   height: auto;
 }
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.article-image {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card-article {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
@@ -170,6 +234,19 @@ header {
   }
   .menu {
     display: initial;
+  }
+  .testimonial {
+    max-width: 100%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial .image {
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
   }
 }
 /*------------------------------------------------- */
@@ -242,12 +319,14 @@ header {
   width: 100%;
   height: 100%;
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 /* INTRO */
 .nkumpi_intro {
   padding: 5px;
   background: rgb(66, 66, 66);
+  overflow-x: hidden;
 }
 
 .nkumpi_intro h1 {
@@ -323,7 +402,6 @@ header {
 
 /* Testimonial Section */
 
-
 .testimonial {
   position: relative;
   max-width: 1000px;
@@ -358,7 +436,6 @@ header {
   row-gap: 3px;
   height: 100%;
   width: 100%;
-  max-width: 1000px;
 }
 
 .slide p {
@@ -416,15 +493,6 @@ header {
   background-color: #4070f4;
 }
 
-@media screen and (max-width: 768px) {
-  .slide p {
-    padding: 0 20px;
-  }
-  .nav-btn {
-    display: none;
-  }
-}
-
 /* ABOUT US */
 
 .about {
@@ -474,6 +542,7 @@ h1 {
   cursor: pointer;
   transition: 0.3s;
   background-color: #ffffff;
+  position:relative;
 }
 .card .img-container {
   width: 8em;
@@ -650,17 +719,23 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
 
 /* blog */
 
-.blog{
+.blog {
   background: white;
   padding: 4.5rem 0;
+  overflow-x: hidden;
 }
-.blog-content{
+
+.blog-content {
   margin: 2rem 0;
 }
-.blog-img{
+
+.blog-img {
   position: relative;
+  margin: 0 0;
+  max-width: fit-content;
 }
-.blog-img span{
+
+.blog-img span {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -669,28 +744,33 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
   font-size: 1.4rem;
   padding: 0.3rem 0.6rem;
 }
-.blog-text{
+
+.blog-text {
   margin: 2.2rem 0;
   padding: 0 1rem;
 }
-.blog-text span{
+
+.blog-text span {
   font-weight: 300;
   display: block;
   padding-bottom: 0.5rem;
 }
-.blog-text h2{
+
+.blog-text h2 {
   font-family: var(--Playfair);
   padding: 1rem 0;
   font-size: 1.65rem;
   font-weight: 500;
 }
-.blog-text p{
+
+.blog-text p {
   font-weight: 300;
   font-size: 1.1rem;
   opacity: 0.9;
   padding-bottom: 1.2rem;
 }
-.blog-text a{
+
+.blog-text a {
   font-family: var(--Roboto);
   font-size: 1.1rem;
   text-decoration: none;
@@ -701,6 +781,7 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
   padding: 0.55rem 1.2rem;
   transition: all 0.5s ease;
 }
+
 .blog-text a:hover{
   background: #0c4796;
   color: rgb(36, 189, 138);
@@ -926,17 +1007,22 @@ a.contact_btn:hover {
 }
 
 .social_links_top {
-  padding:0;
+  padding: 0;
   margin: 0;
   float: right;
   display: block;
   overflow: hidden;
   list-style: none;
+  text-align: center;
   color: #24252a;
 }
 
+.social_links_top h3 {
+  text-align: left;
+}
+
 .social_links_top li {
-  float: left;
+  float: right;
   margin-right: 4px;
   color: #24252a;
 }
@@ -1090,6 +1176,12 @@ a.contact_btn:hover {
   section {
     padding: 1em 7em;
   }
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
 }
 @media screen and (min-width: 992px) {
   section {
@@ -1099,8 +1191,21 @@ a.contact_btn:hover {
     padding: 5em 1em;
   }
   .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding: 1em 1em;
+  }
+  .testimonial {
+    max-width: 100%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial .image {
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
   }
 }
