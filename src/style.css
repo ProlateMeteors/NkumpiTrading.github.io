@@ -717,6 +717,90 @@ translate Y: move along the Y axis, negative(-20) moves it up, while positive(20
   transition: all 400ms ease-in-out;
 }
 
+/* Modal card for team*/
+
+fieldset {
+  display: none;
+}
+
+fieldset.show {
+  display: block;
+}
+
+select:focus, input:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #2196F3 !important;
+  outline-width: 0 !important;
+  font-weight: 400;
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+
+.tabs {
+  margin: 2px 5px 0px 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.tabs:hover, .tabs.active {
+  border-bottom: 1px solid #2196F3;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1565C0;
+}
+
+.box {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.modal-backdrop { 
+  background-color: #64B5F6;
+}
+
+.line {
+  background-color: #CFD8DC;
+  height: 1px;
+  width: 100%;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.blog-list .item .post-thumb {
+  max-width: 110px;
+  border-radius: 2px;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 1rem !important;
+}
+.img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs h6 {
+      font-size: 18px;
+  }
+}
+
 /* blog */
 
 .blog {
