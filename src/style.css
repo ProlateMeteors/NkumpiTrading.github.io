@@ -29,6 +29,16 @@ header {
   z-index: 499;
 }
 
+nav {
+  background-color: #24252a;
+  position: sticky;
+  top: 0px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
 .nav__links {
   list-style: none;
   display: inline-flex;
