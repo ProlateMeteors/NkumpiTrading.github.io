@@ -1535,10 +1535,12 @@ a.contact_btn:hover {
     display: flex;
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 768px) {
+  .slide p {
+	  padding: 0 20px
+  }
+  .nav-btn {
+	  display: none;
+  }
   .tabs h6 {
       font-size: 18px;
-  }
 }
