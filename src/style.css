@@ -411,8 +411,8 @@ cursor: pointer;
 }  
 
 .inps button {  
-  width: 85%;  
-  height: 39px;  
+  width: 80%;  
+  height: 32px;  
   padding: 6px;  
   margin-top: 15px;  
   background: #41943e;  
@@ -427,9 +427,9 @@ cursor: pointer;
   user-select: none;  
 }  
 .inps button:hover {  
-  background: #ffffff;  
-  color: #41943e;  
-  border: 2px solid #41943e;  
+  background: #3498db;  
+  color: #ffff;  
+  border: 2px solid #3498db;  
 }  
 .inps button:active {  
   background: #ffffff;  
