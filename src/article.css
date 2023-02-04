@@ -1,6 +1,7 @@
 /*affects all HTML elements, selector we'll rarely use*/
 *{
     color: rgb(45, 165, 71);
+    background-color: #fff;
 }
 
 body{
