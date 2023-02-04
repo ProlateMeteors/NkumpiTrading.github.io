@@ -13,14 +13,14 @@ body{
     font-size: 1000px;
 }
 
-h1 {
+.first_class h1 {
     color: rgb(17, 17, 218); /*or #FF123234*/
     font-family: verdana;
-    font-size: 28px;
+    font-size: 30px;
   }
 
-h2{
-    font-size: 20px;
+.first_class h2{
+    font-size: 18px;
 }
 
 /*class id myfirst heading 1 properties*/
