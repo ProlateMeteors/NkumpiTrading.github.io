@@ -43,7 +43,7 @@ div.first_class{
     color: red;
 }
 
-.author_date_class p{
+p#author {
     color: grey;
     font-size: 10px;
     margin-left: 10px;
