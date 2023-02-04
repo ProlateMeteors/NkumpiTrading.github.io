@@ -3,13 +3,8 @@
     color: rgb(45, 165, 71);
 }
 
-body{
-  margin: 20px;
-  margin-top: 20px;
-}
-
 /*class first_class heading 1 properties*/
-.myfirst h1{
+.myfirst h1 {
     font-size: 1000px;
 }
 
@@ -50,6 +45,8 @@ div.first_class{
 
 .author_date_class p{
     color: grey;
+    font-size: 10px;
+    margin-left: 10px;
 }
 
 /*Pseudo-classes are selectors that refer to states of a particular element, usually a link.*/
