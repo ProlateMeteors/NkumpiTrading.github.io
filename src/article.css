@@ -28,6 +28,10 @@ body{
     background-color: #fff;
 }
 
+img {
+    margin-left: 10px;
+}
+
 /*class first_class paragraph properties*/
 div.first_class{
     color: rgb(3, 1, 22);
