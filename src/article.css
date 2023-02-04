@@ -4,7 +4,6 @@
 }
 
 body{
-  background-color: #fff;
   margin: 20px;
   margin-top: 20px;
 }
@@ -26,12 +25,13 @@ h2{
 
 /*class id myfirst heading 1 properties*/
 #myfirst{
-    color:purple;
+    background-color: #fff;
 }
 
 /*class first_class paragraph properties*/
 div.first_class{
     color: rgb(3, 1, 22);
+    background-color: #fff;
 }
 
 /*class first_class paragraph properties within div*/
