@@ -17,6 +17,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
+		<nav>
+            		<a class="logo" href="http://nkumpitrading.co.za"><img src="images/logo.svg" alt="logo"></a>
+                	<ul class="nav__links">
+                    	<li><a href="../index.html">Home</a></li>
+                    	<li><a href="../services.html">Services</a></li>
+                    	<li><a href="../about.html">About</a></li>
+			<li><a href="../media.html">Media</a></li>
+                	</ul>
+            		<a class="cta" href="../contact.html">Contact</a>
+            		<p class="menu cta">Menu</p>
+		</nav>
     <!--The <body> tag defines the document's body.-->
     <!--The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
     <!--There can only be one <body> element in an HTML document.-->
@@ -129,5 +140,19 @@
 				</div>
 			</div>
 		</footer>
+        		<div id="mobile__menu" class="overlay">
+            		<a class="close">&times;</a>
+            		<div class="overlay__content">
+			<a href="index.html">Home</a>
+                	<a href="services.html">Services</a>
+                	<a href="about.html">About</a>
+			<a href="media.html">Media</a>
+			<a href="contact.html">Contact</a>
+            		</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../src/mobile.js"></script>
     </body>
 </html>
