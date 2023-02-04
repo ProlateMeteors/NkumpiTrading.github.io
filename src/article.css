@@ -76,6 +76,83 @@ a:focus{
     background-color:lightcoral;
 }
 
+nav {
+  background-color: #24252a;
+  position: sticky;
+  z-index: 10000;
+  top: 0px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: inline-flex;
+  z-index: 500;
+  top: 0;
+  position: top;
+  text-align: center;
+  margin-bottom: 1px;
+  padding-top: 15px;
+}
+
+.logo {
+  margin-right: auto;
+  z-index: 500;
+  position: top;
+  text-align: left;
+  zoom: 0.1;
+  top: 0px;
+  padding-top: 0px;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  color: #e4e7e6;
+  text-decoration: none;
+  float: right;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links ul {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0c4796;
+}
+
+.cta {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  padding: 9px 25px 9px 25px;
+  background-color: rgb(13, 155, 190);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease 0s;
+  
+}
+
+.cta:hover {
+  background-color: rgba(4, 108, 134, 0.8);
+}
 
 @media screen and (min-width: 801px) {
   section {
