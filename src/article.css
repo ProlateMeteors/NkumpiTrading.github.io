@@ -75,3 +75,24 @@ a:visited{
 a:focus{
     background-color:lightcoral;
 }
+
+
+@media screen and (min-width: 801px) {
+  section {
+    padding: 1em 7em;
+  }
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+ .logo img{
+  margin-top: -400px; 
+  position: top;
+  text-align: left;
+  zoom: 1;
+  top: 0px;
+  padding: 9px 25px 9px 25px;
+  }
+}
