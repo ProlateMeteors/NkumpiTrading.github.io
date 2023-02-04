@@ -16,11 +16,11 @@ body{
 h1 {
     color: rgb(17, 17, 218); /*or #FF123234*/
     font-family: verdana;
-    font-size: 300%;
+    font-size: 28px;
   }
 
 h2{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 /*class id myfirst heading 1 properties*/
@@ -37,12 +37,15 @@ div.first_class{
 /*class first_class paragraph properties within div*/
 .first_class p{
     color: rgb(14, 6, 6);
-    font-style: italic;
 }
 
 /*span in paragraph properties within div, or just put with p above*/
 .first_class span{
     color: red;
+}
+
+.author_date_class p{
+    color: grey;
 }
 
 /*Pseudo-classes are selectors that refer to states of a particular element, usually a link.*/
