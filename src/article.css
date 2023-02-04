@@ -9,9 +9,10 @@
 }
 
 .first_class h1 {
-    color: rgb(17, 17, 218); /*or #FF123234*/
+    color: rgb(17 153 218); /*or #FF123234*/
     font-family: verdana;
     font-size: 30px;
+    text-align: left;
   }
 
 .first_class h2{
