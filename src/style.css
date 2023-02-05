@@ -995,6 +995,9 @@ a:hover {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+button#sub {
+    position: absolute;
+}
 
 /* blog */
 
