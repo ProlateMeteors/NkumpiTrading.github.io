@@ -11,12 +11,12 @@
 .first_class h1 {
     color: rgb(17 153 218); /*or #FF123234*/
     font-family: verdana;
-    font-size: 24px;
+    font-size: 25px;
     text-align: left;
   }
 
 .first_class h2{
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /*class id myfirst heading 1 properties*/
