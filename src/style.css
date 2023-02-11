@@ -550,11 +550,6 @@ cursor: pointer;
  adding style to about items 
 ============================*/
 
-.services h1 {
-  text-transform: uppercase;
-  border-bottom: 4px solid #3498db;
-}
-
 .include {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
@@ -569,8 +564,10 @@ cursor: pointer;
   font-size: 15px;
   cursor: pointer;
   transition: transform 0.5s, background 0.5s;
+  background-image: url(../images/service-back.png);
+  background-size: cover;
+  background-position: center;
 }
-
 .service i {
   font-size: 60px;
   color: #3498db;
@@ -584,21 +581,38 @@ cursor: pointer;
   font-size: 20px;
   padding-bottom: 10px;
   margin-top: 40px;
+  opacity: 1.0;
+  color: white;
 }
 
 .service h2 {
   font-weight: 600;
   margin-bottom: 8px;
+  opacity: 1.0;
+  color: white;
+}
+
+.service p {
+  color: white;
+  background-color: rgba(73, 66, 66, 0.562);
 }
 
 .service:hover {
-  background: #3498db;
+  background: #2b2f31;
   color: white;
   transform: scale(1.05);
 }
 
 .service:hover i {
   color: white;
+}
+
+.service:hover i {
+  color: white;
+}
+
+.service:hover p {
+  background-color: rgba(61, 65, 62, 0.568);
 }
 
 /* Testimonial Section */
