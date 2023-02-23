@@ -96,7 +96,7 @@ nav a {
   margin-right: 20px;
   margin-top: 15px;
   padding: 9px 25px 9px 25px;
-  background-color: rgb(13, 155, 190);
+  background-color: #0065a9;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -106,7 +106,8 @@ nav a {
 }
 
 .cta:hover {
-  background-color: rgba(4, 108, 134, 0.8);
+  background-color: rgba(4, 134, 21, 0.8);
+  color: #fff;
 }
 
 /* Mobile Nav */
