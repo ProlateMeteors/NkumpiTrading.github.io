@@ -1,112 +1,37 @@
-/*affects all HTML elements, selector we'll rarely use*/
-*{
-    color: rgb(45, 165, 71);
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-/*class first_class heading 1 properties*/
-.myfirst h1 {
-    font-size: 1000px;
-}
-
-.first_class h1 {
-    color: rgb(17 153 218); /*or #FF123234*/
-    font-family: verdana;
-    font-size: 25px;
-    text-align: left;
-  }
-
-.first_class h2{
-    font-size: 17px;
-}
-
-/*class id myfirst heading 1 properties*/
-#myfirst{
-    background-color: #fff;
-}
-
-img {
-    margin-left: 10px;
-}
-
-ul {
-    margin-left: 20px;
-}
-
-/*class first_class paragraph properties*/
-div.first_class{
-    color: rgb(3, 1, 22);
-    padding: 0 50px 0 10px;
-}
-
-/*class first_class paragraph properties within div*/
-.first_class p{
-    color: rgb(14, 6, 6);
-}
-
-/*span in paragraph properties within div, or just put with p above*/
-.first_class span{
-    color: red;
-}
-
-p#author {
-    color: grey;
-    font-size: 10px;
-    margin-left: 10px;
-}
-
-/*Pseudo-classes are selectors that refer to states of a particular element, usually a link.*/
-a{
-    color: aqua;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-a:active{
-    color: red;
-}
-
-a:visited{
-    color: brown;
-}
-
-a:focus{
-    background-color:lightcoral;
-}
-
-.main-column {
-  background-color: #fff;
-}
-
-.main-column  h1 {
+h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 24px;
   width: 100%;
-  color: rgb(68, 64, 64);
   text-align: center;
 }
-.main-column  h2 {
+h2 {
   font-size: 18px;
   color: grey;
   margin-bottom: 20px;
   text-align: center;
 }
-.main-column img {
+.row img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
-.main-column  p {
+p {
   margin-bottom: 24px;
-  color: rgb(59, 58, 58);
 }
 .main-column {
   flex: 10;
-  margin: 30px;
+  margin-left: 30px;
+  margin-right: 20px;
   width: 80%;
 }
 .published-by {
@@ -122,7 +47,7 @@ a:focus{
   width: 20%;
   top: 0;
   overflow: visible;
-  position: sticky;
+  position: relative;
   display: block;
   z-index: 100;
   position: -webkit-sticky;
@@ -140,103 +65,8 @@ a:focus{
   clear: both;
 }
 
-
-
-nav {
-  background-color: #24252a;
-  position: sticky;
-  z-index: 10000;
-  top: 0px;
+.row {
+  text-align:left;
+  width: 100%;
+  background-color: white;
 }
-
-nav a {
-  text-decoration: none;
-}
-
-.nav__links {
-  list-style: none;
-  display: inline-flex;
-  z-index: 500;
-  top: 0;
-  position: top;
-  text-align: center;
-  margin-bottom: 1px;
-  padding-top: 15px;
-}
-
-.logo {
-  margin-right: auto;
-  z-index: 500;
-  position: top;
-  text-align: left;
-  zoom: 0.1;
-  top: 0px;
-  padding-top: 0px;
-}
-
-.nav__links a,
-.cta,
-.overlay__content a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 50;
-  color: #e4e7e6;
-  text-decoration: none;
-  float: right;
-  padding-top: 15px;
-  margin-bottom: 10px;
-}
-
-.nav__links li {
-  padding: 0px 20px;
-}
-
-.nav__links ul {
-  padding: 0px 20px;
-}
-
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: #0c4796;
-}
-
-.cta {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;
-  padding: 9px 25px 9px 25px;
-  background-color: rgb(13, 155, 190);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  float: right;
-  transition: all 0.3s ease 0s;
-  
-}
-
-.cta:hover {
-  background-color: rgba(4, 108, 134, 0.8);
-}
-
-@media screen and (min-width: 801px) {
-  section {
-    padding: 1em 7em;
-  }
-  .slide p {
-    padding: 0 20px;
-  }
-  .nav-btn {
-    display: none;
-  }
- .logo img{
-  margin-top: -400px; 
-  position: top;
-  text-align: left;
-  zoom: 1;
-  top: 0px;
-  padding: 9px 25px 9px 25px;
-  }
-}
-
