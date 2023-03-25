@@ -24,11 +24,16 @@
                 	<ul class="nav__links">
                     	<li><a href="../index.html">Home</a></li>
                     	<li><a href="../services.html">Services</a></li>
-                    	<li><a href="../about.html">About</a></li>
+						<li><a href="../about.html" aria-haspopup="true">About</a>
+							<ul class="dropdown" aria-label="submenu" style="position: absolute; top: 20px; left: -40px; padding: 20px;">
+							  <li><a href="../mission.html">Our Mission</a></li>
+							  <li><a href="../management.html">Management</a></li>
+							  </ul>
+							</li>
 						<li><a href="../media.html">Media</a></li>
                 	</ul>
-            		<a class="cta" href="../contact.html">Contact</a>
-            		<p class="menu cta">Menu</p>
+            			<a class="cta" href="../contact.html">Contact</a>
+            			<p class="menu cta">Menu</p>
 		</nav>
     <!--The <body> tag defines the document's body.-->
     <!--The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
@@ -119,6 +124,15 @@
 			    <div class="recommended">
 			      <h2>Recommended Articles</h2>
 			      <img
+				src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*9g6NoiJOLJmZHcp6dOS8FA.jpeg"
+			      />
+			      <p>
+				<strong>Response To SONA 2023:</strong>
+				<a href="article4.html">
+					Nkumpi Trading welcomes the State of the Nation Address (SONA) 2023.</a
+				>
+			      </p>
+			      <img
 				src="https://raw.githubusercontent.com/ProlateMeteors/NkumpiTrading.github.io/main/images/article3.png"
 			      />
 			      <p>
@@ -126,16 +140,6 @@
 				<a href="article1.html">
 				  Cashbuild has donated garden tools worth R16 000 to the community of
 				  Zebediela, in Limpopo.</a
-				>
-			      </p>
-			      <img
-				src="https://raw.githubusercontent.com/ProlateMeteors/NkumpiTrading.github.io/main/images/article4.jpg"
-			      />
-			      <p>
-				<strong>Embracing a Culture of Creation:</strong>
-				<a href="article2.html">
-				  The Benefits of Cultivating Financial Literacy, and Innovation in the
-				  Digital Age.</a
 				>
 			      </p>
 			      <img
@@ -200,15 +204,25 @@
 				</div>
 			</div>
 		</footer>
-        		<div id="mobile__menu" class="overlay">
-            		<a class="close">&times;</a>
-            		<div class="overlay__content">
+		<div id="mobile__menu" class="overlay">
+			<a class="close">&times;</a>
+			<div class="overlay__content">
 			<a href="../index.html">Home</a>
-                	<a href="../services.html">Services</a>
-                	<a href="../about.html">About</a>
+			<a href="../services.html">Services</a>
+			<li class="nav-item dropdown">
+				<div class="btn-group">
+				<a class="btn" href="../about.html">About</a>
+				<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <span class="sr-only">Toggle Dropdown</span>
+				</button>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="../mission.html">Our Mission</a>
+					<a class="dropdown-item" href="../management.html">Management</a>
+				  </div>
+			</li>
 			<a href="../media.html">Media</a>
 			<a href="../contact.html">Contact</a>
-            		</div>
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
