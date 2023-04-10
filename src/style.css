@@ -1746,6 +1746,10 @@ a.contact_btn:hover {
   .tabs h6 {
       font-size: 18px;
   }
+  .about {
+    margin: 0 0px;
+    flex: 1;
+  }
   .about-section {
     flex-direction: column;
     padding: 20px;
